@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1></h1>
+    <div id="app">
+        <div><hello v-bind:name="name"/></div>
+        <div><input type="text" v-model="name"></div>
+    </div>  
+  <script>
+      var hello = Vue.component('hello',{
+          props:['name'],
+          template:'<p class="hello">hello,{{name}}!</p>',
+      })
+      var app =new Vue ({
+          el:'#app',
+          data:{
+              name:'no-name'
+          }
+      })
+  </script>
+</body>
+</html>
