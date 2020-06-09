@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <p v-for="message in messages" class="text" :class="{ 'text-error': message.error }">
+            {{ message.text }}
+        </p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/app05.js"></script>
+</body>
+</html>
