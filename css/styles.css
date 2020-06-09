@@ -17,7 +17,7 @@
     padding: 0;
 }
   
-.tab-item + .tab-item {
+.tab-item {
     margin-left: 1rem;
 }
   
@@ -61,3 +61,22 @@
 .tab-content h2 {
     line-height: 1.125rem;
 }
+
+.container {
+    padding: 1.2rem 2%;
+    text-align: center;
+}
+
+input[type="date"] {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding: .5rem;
+    width: 8rem;
+}
+
+.message {
+    background: lightcyan;
+    border-radius: 4px;
+    padding: 1rem;
+}
+  

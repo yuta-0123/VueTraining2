@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- moment.jsの導入をしていない -->
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <label for="birthday">お誕生日は？</label>
+            <input type="date" id="birthday" v-model="birthday">
+
+            <!-- テンプレート側では {{ age }} と、変数と同様に参照されている -->
+            <p v-if="age>=0">{{age}}歳ですね！</p>
+            <p v-else>お誕生日を入力して下さい。</p>
+
+            <p v-if="isComputedCalled" class="message">Computedが呼び出されました。</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/app07.js"></script>
+</body>
+</html>

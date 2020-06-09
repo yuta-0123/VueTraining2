@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- moment.jsの導入をしていない -->
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <p>
+                <input type="number" v-model.number="left">
+                +
+                <input type="number" v-model.number="right">
+                =
+                {{total}}
+            </p>
+            <p v-if="isComputedCalled" class="message">Computedが呼び出されました。</p>
+          
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/app08.js"></script>
+</body>
+</html>
