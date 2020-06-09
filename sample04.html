@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Vue App</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+      <div class="container">
+        <h1>Welcome to Vue</h1>
+        <ul class="tab">
+            <li class="tab-item"><button>tab 1</button></li>
+            <li class="tab-item"><button>tab 2</button></li>
+            <li class="tab-item"><button>tab 3</button></li>
+        </ul>
+        <section class="tab-content" v-show="currentTab === 1">
+            <h2>Tab 1</h2>
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.</p>
+        </section>
+        <section class="tab-content" v-show="currentTab === 2">
+            <h2>Tab 2</h2>
+            <p>At cum scripta admodum, ius habeo postea deterruisset ne, admodum oporteat eu vis. </p>
+        </section>
+        <section class="tab-content" v-show="currentTab === 3">
+            <h2>Tab 3</h2>
+            <p>Iuvaret efficiantur at est, eos alienum argumentum ei, nullam imperdiet ad sed.</p>
+        </section>
+      </div>
+    </div>
+      
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/app04.js"></script>
+</body>
+</html>
