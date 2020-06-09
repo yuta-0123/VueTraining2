@@ -38,3 +38,26 @@
     color: red;
     background: #feeeea;
 }
+
+
+  
+.tab {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+  
+.tab-item {
+    margin-left: 1rem;
+}
+  
+.tab-content {
+    background: #f1fafa;
+    padding: .5rem 1rem;
+}
+  
+.tab-content h2 {
+    line-height: 1.125rem;
+}

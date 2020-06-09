@@ -8,6 +8,8 @@
 </head>
 <body>
     <div id="app">
+        <!-- 引用符の中はJavaScriptオブジェクトとして評価されるわけです。 -->
+        <!-- (例)　:style="{width: progress + '%'}" -->
         <p v-for="message in messages" class="text" :class="{ 'text-error': message.error }">
             {{ message.text }}
         </p>
